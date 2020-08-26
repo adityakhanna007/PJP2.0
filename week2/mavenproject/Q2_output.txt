@@ -1,0 +1,11 @@
+================================================
+++++++++++++++ LOCAL REPOSITORY ++++++++++++++++
+================================================
+C:\Users\adity\.m2\repository
+antlr/                     commons-cli/          jakarta/  org/
+aopalliance/               commons-codec/        javax/    Q2_output.txt
+asm/                       commons-collections/  jdom/     xmlpull/
+backport-util-concurrent/  commons-io/           junit/    xpp3/
+ch/                        commons-lang/         log4j/
+classworlds/               commons-logging/      net/
+com/  

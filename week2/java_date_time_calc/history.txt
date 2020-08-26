@@ -1,0 +1,51 @@
+
+Input Option 1 : Date1 : Mon Jan 01 00:00:00 IST 1900 Date2 : Mon Jan 01 00:00:00 IST 1900
+Output :
+New date after adding Two dates : Thu Jan 02 00:00:00 IST 3800
+================================================================================================
+
+Input Option 1 : Date1 : Mon Jan 01 00:00:00 IST 1900 Date2 : Sat Jan 13 00:00:00 IST 1900
+Output :
+New date after adding Two dates : Tue Jan 14 00:00:00 IST 3800
+================================================================================================
+
+Input Option 1 : Date1 : Mon Jan 01 00:00:00 IST 1900 Date2 : Mon Oct 12 11:00:00 IST 1914
+Output :
+New date after adding Two dates : Thu Oct 13 11:00:00 IST 3814
+================================================================================================
+
+Input Option 1 : Date1 : Wed Sep 14 10:09:00 IST 1910 Date2 : Mon Jan 01 00:00:00 IST 1900
+Output :
+Difference between 2 dates: diffinDays: 3908 DiffInWeeks: 558 DiffInMonths: 130
+================================================================================================
+
+
+Input Option 2 : Date : Mon Jan 01 00:00:00 IST 1900
+Output :
+New date after adding 8 days : Tue Jan 09 00:00:00 IST 1900
+================================================================================================
+
+Input Option 2 : Date : Mon Jan 01 00:00:00 IST 1900
+Output :
+New date after subtracting 34 days : Tue Nov 28 00:00:00 IST 1899
+================================================================================================
+
+Input Option 3 : Date : Thu Aug 09 00:00:00 IST 1900
+Output :
+Day of Week : 5
+================================================================================================
+
+Input Option 4 : Date : Mon Aug 24 00:00:00 IST 2020 
+Output :
+Week number for the given date : 35
+================================================================================================
+
+Input Option 5 : Date : Mon Aug 24 15:57:56 IST 2020
+Output :
+The output of the option 5is :Sat Aug 22 15:57:56 IST 2020
+================================================================================================
+
+Input Option 5 : Date : Mon Aug 24 15:58:14 IST 2020
+Output :
+The output of the option 9is :Tue Aug 24 15:58:14 IST 2021
+================================================================================================
