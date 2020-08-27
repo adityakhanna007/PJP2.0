@@ -1,0 +1,2 @@
+module fee_calculator {
+}
