@@ -56,7 +56,7 @@ public class fee_calc_runner {
 		 Collections.sort(tp.getList(),new sortfun());
 		 
 		 
-		/*List<transactionpojo> report=new ArrayList<>();
+		List<transactionpojo> report=new ArrayList<>();
         if(tp.getList().size()==0)
         	System.out.println("list is empty");
         else
@@ -64,7 +64,10 @@ public class fee_calc_runner {
         	report.add(tp.getList().get(0));
         	for(int i=1;i<tp.getList().size();i++)
         	{   int ind=report.size()-1;
-        		if(tp.getList().get(i).getClient_id().contentEquals(report.get(ind).getClient_id()))
+        		if(tp.getList().get(i).getClient_id().toLowerCase().equals(report.get(ind).getClient_id().toLowerCase())&&
+        		    tp.getList().get(i).getTrans_type().toLowerCase().equals(report.get(ind).getTrans_type().toLowerCase())&&
+        		    tp.getList().get(i).getTrans_date().equals(report.get(ind).getTrans_date())&&
+        		    tp.getList().get(i).getPriority_flag().toLowerCase().equals(report.get(ind).getPriority_flag().toLowerCase()))
         		{
         			Double data=report.get(ind).getMarket_value();
         		    data+=tp.getList().get(i).getMarket_value();
@@ -77,7 +80,8 @@ public class fee_calc_runner {
    		 {
    			 System.out.println(report.get(i));
    		 }
-        	*/
+   		 
+        	
 		 BufferedWriter bw=null;
 		 try {
 			 File file=new File("summary_report.csv");
@@ -87,7 +91,7 @@ public class fee_calc_runner {
 		 bw=new BufferedWriter(fw);
 		 bw.write("Client Id,Transaction Type,Transaction Date,Priority,Processing Fee");
 		 bw.newLine();
-		 for(transactionpojo record:tp.getList())
+		 for(transactionpojo record:report)
 		 {   String h=String.join("/", Integer.toString(record.getTrans_date().getMonth()),Integer.toString(record.getTrans_date().getDate()),Integer.toString(record.getTrans_date().getYear()));
 		     
 			 bw.write(String.join(",",record.getClient_id(),record.getTrans_type(),h,record.getPriority_flag(),Double.toString(record.getMarket_value())));
@@ -101,7 +105,8 @@ public class fee_calc_runner {
 			 e.printStackTrace();
 		 }
 		
-		 
+        }
+        System.out.println("success");
         }
 		
 		 
