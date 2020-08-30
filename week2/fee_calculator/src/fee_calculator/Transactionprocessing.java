@@ -26,7 +26,7 @@ public class Transactionprocessing {
       {
 			 String key1=list.get(i).getClient_id().toLowerCase()+list.get(i).getSecurity_id().toLowerCase()+list.get(i).getTrans_type().toLowerCase()+list.get(i).getTrans_date();
              //System.out.println(key1);
-			 if(list.contains(key1))
+			 if(set.contains(key1))
           {
         	  marked[i]=1;
 			  double updatedvalue=list.get(i).getMarket_value()+10;
@@ -45,7 +45,7 @@ public class Transactionprocessing {
     					  list.get(i).getTrans_date().equals(list.get(j).getTrans_date())&&list.get(j).getTrans_type().toLowerCase().equals("sell")) {
     				  double updatedvalue=list.get(j).getMarket_value()+10;
     				  list.get(j).setMarket_value(updatedvalue);
-    				  marked[j]=1;cond=true;System.out.println("hihihihihihihiih");
+    				  marked[j]=1;cond=true;//System.out.println("hihihihihihihiih");
     			}
     			  if(cond)
     			  {marked[i]=1;
