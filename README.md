@@ -1,2 +1,2 @@
 # PJP2.0
-WEEK1 ASSIGNMENT
+All the PJP2.0 Assignments are submitted here.
