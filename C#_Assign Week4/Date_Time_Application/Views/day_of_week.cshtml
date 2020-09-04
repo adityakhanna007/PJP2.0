@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "day_of_week";
+}
+
+<h2>Find Day Of Week</h2>
+<br />
+<h4>@ViewBag.ans</h4>
+<br />
+@using (Html.BeginForm("day_of_week", "Home", FormMethod.Post))
+{
+    <h3>Date :</h3>
+
+    <select name="date">
+        @for (var i = 1; i <= 31; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+
+    <p>month:</p>
+    <select name="month">
+        @for (var i = 1; i <= 12; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+
+    <p>year:</p>
+    <select name="year">
+        @for (var i = 1900; i <= 2020; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+
+    <p>Hr:</p>
+    <select name="hr">
+        @for (var i = 0; i <= 23; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+
+    <p>min:</p>
+    <select name="min">
+        @for (var i = 0; i <= 59; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+
+    <p>sec:</p>
+    <select name="sec">
+        @for (var i = 0; i <= 59; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+
+    <button type="submit">Find</button>
+
+}
+
+
