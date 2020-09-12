@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "index";
+}
+
+
+    <p id="en">@Html.ActionLink("English", "Change", "Language", new { LangAbbrev = "en" }, null) </p>
+    <p id="fr">@Html.ActionLink("France", "Change", "Language", new { LangAbbrev = "fr" }, null)</p>
+    <p id="de">@Html.ActionLink("German", "Change", "Language", new { LangAbbrev = "de" }, null)</p>
+
+<p id="result">@ViewBag.message</p>
+
+
+

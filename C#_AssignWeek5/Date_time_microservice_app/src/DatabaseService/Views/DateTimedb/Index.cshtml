@@ -1,0 +1,49 @@
+﻿@model IEnumerable<DatabaseService.Models.datetimerecords>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Date1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.function)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.result)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.function)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.result)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

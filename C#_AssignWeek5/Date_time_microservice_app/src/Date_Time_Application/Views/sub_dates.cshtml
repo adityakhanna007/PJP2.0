@@ -1,0 +1,119 @@
+﻿
+@{
+    ViewBag.Title = "add_sub_dates";
+}
+
+<h2>Subtract Dates</h2>
+<br />
+<h4>@ViewBag.ans</h4>
+<br />
+@using (Html.BeginForm("sub_dates", "Home", FormMethod.Post))
+{
+    <h3>Date 1:</h3>
+    <p>date:</p>
+    <select name="date1">
+        @for (var i = 1; i <= 31; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+
+    <p>month:</p>
+    <select name="month1">
+        @for (var i = 1; i <= 12; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+
+    <p>year:</p>
+    <select name="year1">
+        @for (var i = 1900; i <= 2020; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+
+    <p>Hr:</p>
+    <select name="hr1">
+        @for (var i = 0; i <= 23; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+
+    <p>min:</p>
+    <select name="min1">
+        @for (var i = 0; i <= 59; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+
+    <p>sec:</p>
+    <select name="sec1">
+        @for (var i = 0; i <= 59; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+    <br>
+    <br>
+    <h3>Date 2:</h3>
+    <p>date:</p>
+    <select name="date2">
+        @for (var i = 1; i <= 31; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+
+
+    <p>month:</p>
+    <select name="month2">
+        @for (var i = 1; i <= 12; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+
+    <p>year:</p>
+    <select name="year2">
+        @for (var i = 1900; i <= 2020; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+
+    <p>hr:</p>
+    <select name="hr2">
+        @for (var i = 0; i <= 23; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+
+    <p>min:</p>
+    <select name="min2">
+        @for (var i = 0; i <= 59; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+
+    <p>sec:</p>
+    <select name="sec2">
+        @for (var i = 0; i <= 59; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+    <br />
+
+    <br />
+    <button type="submit">Subtract</button>
+
+
+
+}
+

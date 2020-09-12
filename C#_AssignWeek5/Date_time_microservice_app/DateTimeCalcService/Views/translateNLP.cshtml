@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "translateNLP";
+}
+
+<h2>translateNLP</h2>
+
+
+<br />
+<h4>@ViewBag.ans</h4>
+<br />
+@using (Html.BeginForm("translateNLP", "Home", FormMethod.Post))
+{
+    <select name="option">
+        <option value="1">Today</option>
+        <option value="2">Tomorrow</option>
+        <option value="3">Day After Tomorrow</option>
+        <option value="4">Yesterday</option>
+        <option value="5">Day Before Yesterday</option>
+        <option value="6">Last Week</option>
+        <option value="7">Next Week</option>
+        <option value="8">NextMonth</option>
+        <option value="9">NextYear</option>
+        <option value="10">Last Month</option>
+        <option value="11">Last Year</option>
+
+
+
+    </select>
+    <br />
+    <button type="submit">Submit</button>
+
+
+}
+

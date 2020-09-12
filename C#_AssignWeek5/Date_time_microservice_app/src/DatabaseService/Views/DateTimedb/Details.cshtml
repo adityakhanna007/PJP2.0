@@ -1,0 +1,50 @@
+﻿@model DatabaseService.Models.datetimerecords
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DateTimeRecords</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Date1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.function)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.function)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.result)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.result)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
